@@ -5,6 +5,7 @@
         <h1 class="journal-header">
           a wise person once said...
         </h1>
+
       </div>
     </div>
     <g-link v-for="edge in $page.journal.edges"
