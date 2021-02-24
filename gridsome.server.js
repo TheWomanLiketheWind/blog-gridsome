@@ -8,16 +8,16 @@
 module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-    // const authors = addCollection('articles')
-    // const newsItems = addCollection('newsItems')
-    // const themes = addCollection('themes')
+    const authors = addCollection('articles')
+    const newsItems = addCollection('newsItems')
+    const themes = addCollection('themes')
 
-    // // authors.addNode({
-    // //   id: post.id,
-    // // })
-    // console.log('authors', authors)
-    // console.log('newsItems', newsItems)
-    // console.log('newsItems', themes)
+    // authors.addNode({
+    //   id: post.id,
+    // })
+    console.log('authors', authors)
+    console.log('newsItems', newsItems)
+    console.log('newsItems', themes)
 
   })
 

@@ -23,10 +23,10 @@ module.exports = {
       // singleTypes: ['impressum'],
       // Possibility to login with a Strapi user,
       // when content types are not publicly available (optional).
-      // loginData: {
-      //   identifier: 'Sara',
-      //   password: 'Sara12345678'
-      // }
+      loginData: {
+        identifier: 'Sara',
+        password: 'Sara12345678'
+      }
     }
   }],
   templates: {
