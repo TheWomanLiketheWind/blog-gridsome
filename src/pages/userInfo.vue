@@ -56,14 +56,14 @@ export default {
     }
   },
   mounted() {
-    const { user: { username, email } } = JSON.parse(localStorage.getItem('userInfo'))
+    const { user: { username, email } } = JSON.parse(window.localStorage.getItem('userInfo'))
     this.username = username
     this.email = email
   },
   methods: {
     // 退出登录
     Logout() {
-      localStorage.clear()
+      window.localStorage.clear()
       window.location.replace('/')
     }
   }

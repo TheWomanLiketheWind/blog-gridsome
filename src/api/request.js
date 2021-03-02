@@ -10,7 +10,7 @@ const axiosRequest = axios.create({
 });
 
 axiosRequest.interceptors.request.use(function (config) {
-  let token = JSON.parse(localStorage.getItem('userInfo'))
+  let token = JSON.parse(window.localStorage.getItem('userInfo'))
   token && (config.headers.Authorization = `Bearer ${token.jwt}`)
   return config;
 }, function (error) {
@@ -29,7 +29,7 @@ axiosRequest.interceptors.response.use(
   }, (err) => {
     console.log('err', err)
     if (err.response.status === 401) {
-      localStorage.clear()
+      window.localStorage.clear()
       window.location.replace('/Login')
     } else if (err.response.status === 403) {
       window.location.replace('/Login')

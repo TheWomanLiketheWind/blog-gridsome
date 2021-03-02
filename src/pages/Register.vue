@@ -62,7 +62,7 @@ export default {
     async submitButton() {
       try {
         const userInfo = await registerApi({ username: this.username, email: this.email, password: this.password })
-        localStorage.setItem('userInfo', JSON.stringify(userInfo))
+        window.localStorage.setItem('userInfo', JSON.stringify(userInfo))
         window.location.replace('/')
       } catch {
         alert('注册失败, 请稍后再试！')

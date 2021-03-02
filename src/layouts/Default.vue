@@ -41,7 +41,7 @@ query {
 export default {
   computed: {
     userInfo() {
-      return JSON.parse(localStorage.getItem('userInfo'))
+      return JSON.parse(window.localStorage.getItem('userInfo'))
     }
   }
 }
