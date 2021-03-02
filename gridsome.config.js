@@ -25,7 +25,7 @@ module.exports = {
       // when content types are not publicly available (optional).
       loginData: {
         identifier: 'Sara',
-        password: 'Sara12345678'
+        password: 'Gao12345678'
       }
     }
   }],
