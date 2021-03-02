@@ -20,13 +20,13 @@ module.exports = {
       apiURL: process.env.GRIDSOME_API_URL,
       queryLimit: 1000, // Defaults to 100
       contentTypes: ['articles', 'categories', 'blog-news', 'themes'],
-      singleTypes: ['impressum'],
+      // singleTypes: ['impressum'],
       // Possibility to login with a Strapi user,
       // when content types are not publicly available (optional).
-      loginData: {
-        identifier: 'Sara',
-        password: 'Gao12345678'
-      }
+      // loginData: {
+      //   identifier: 'Sara',
+      //   password: 'Gao12345678'
+      // }
     }
   }],
   templates: {
