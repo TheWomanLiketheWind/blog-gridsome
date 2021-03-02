@@ -39,10 +39,13 @@ query {
 
 <script>
 export default {
-  computed: {
-    userInfo() {
-      return JSON.parse(window.localStorage.getItem('userInfo'))
+  data() {
+    return {
+      userInfo: undefined
     }
+  },
+  mounted() {
+    this.userInfo = JSON.parse(window.localStorage.getItem('userInfo'))
   }
 }
 </script>

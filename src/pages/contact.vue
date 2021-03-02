@@ -49,7 +49,7 @@ export default {
       try {
         const data = await contactApi({ Name: this.name, Email: this.email, Message: this.message })
         alert('提交成功')
-        window.location.reload()
+        window.location.reload();
       } catch {
       }
     }

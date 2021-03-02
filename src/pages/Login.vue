@@ -53,8 +53,8 @@ export default {
     async submitButton() {
       try {
         const userInfo = await loginApi({ identifier: this.username, password: this.password })
-        window.localStorage.setItem('userInfo', JSON.stringify(userInfo))
-        window.location.replace('/')
+        localStorage.setItem('userInfo', JSON.stringify(userInfo))
+        localStorage.replace('/')
       } catch {
         alert('登录失败, 请稍后再试！')
       }

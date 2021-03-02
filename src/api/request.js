@@ -10,8 +10,10 @@ const axiosRequest = axios.create({
 });
 
 axiosRequest.interceptors.request.use(function (config) {
-  let token = JSON.parse(window.localStorage.getItem('userInfo'))
-  token && (config.headers.Authorization = `Bearer ${token.jwt}`)
+  if (window.localStorage.getItem('userInfo')) {
+    let token = JSON.parse(window.localStorage.getItem('userInfo'))
+    token && (config.headers.Authorization = `Bearer ${token.jwt}`)
+  }
   return config;
 }, function (error) {
   return Promise.reject(error);
